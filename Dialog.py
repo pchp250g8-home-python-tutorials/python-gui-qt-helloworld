@@ -1,4 +1,4 @@
-import sys
+
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -23,9 +23,3 @@ class Dialog(QDialog):
     def pushButton2Click(self):
         QApplication.quit()
         
-        
-if(__name__ == "__main__"):
-    app = QApplication()
-    dialog = Dialog()
-    dialog.show()
-    sys.exit(app.exec())
